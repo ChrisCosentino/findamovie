@@ -1,7 +1,7 @@
 import Row from 'components/Row';
 import Navbar from 'components/Navbar';
 import { fetchMovieResults } from './api/movies';
-import SelectedTrailerContext from 'contexts/SelectedTrailerContext';
+import Head from 'next/head';
 import SelectedTrailerProvider from 'contexts/SelectedTrailerProvider';
 
 export const getServerSideProps = async () => {
@@ -13,6 +13,10 @@ export const getServerSideProps = async () => {
 const Home = ({ genres }) => {
   return (
     <>
+      <Head>
+        <title>Find A Movie</title>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <SelectedTrailerProvider>
         <Navbar />
         <div
