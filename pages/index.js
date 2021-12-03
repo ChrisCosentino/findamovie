@@ -16,6 +16,10 @@ const Home = ({ genres }) => {
       <Head>
         <title>Find A Movie</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta
+          name='description'
+          content="Movie night and don't know what movie to watch? Find the perfect movie. Search by genre or take the quiz and let us do the hard work!"
+        />
       </Head>
       <SelectedTrailerProvider>
         <Navbar />
